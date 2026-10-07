@@ -40,7 +40,8 @@
         "deb",
         "rpm"
       ],
-      "category": "Utility"
+      "category": "Utility",
+      "maintainer": "Mehdi Mamas <mehdimamasxd+chat@gmail.com>"
     },
     "mac": {
       "target": [
