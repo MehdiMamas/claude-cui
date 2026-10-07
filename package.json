@@ -1,0 +1,75 @@
+{
+  "name": "claude-cui",
+  "version": "0.1.0",
+  "description": "A desktop companion with editable prompt buttons for Claude",
+  "main": "src/main.cjs",
+  "bin": {
+    "claude-cui": "bin/claude-cui.cjs"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "start": "electron .",
+    "test": "node --test",
+    "dist": "electron-builder",
+    "dist:linux": "electron-builder --linux",
+    "dist:mac": "electron-builder --mac",
+    "dist:win": "electron-builder --win"
+  },
+  "devDependencies": {
+    "electron-builder": "26.15.3",
+    "jsdom": "^30.1.2",
+    "electron": "44.6.0"
+  },
+  "build": {
+    "appId": "com.mehdimamas.claudecui",
+    "productName": "Claude CUI",
+    "files": [
+      "src/**/*",
+      "package.json"
+    ],
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb",
+        "rpm"
+      ],
+      "category": "Utility"
+    },
+    "mac": {
+      "target": [
+        "dmg",
+        "zip"
+      ]
+    },
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ]
+    }
+  },
+  "peerDependencies": {
+    "electron": "44.6.0"
+  },
+  "author": "MehdiMamas",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MehdiMamas/claude-cui.git"
+  },
+  "homepage": "https://github.com/MehdiMamas/claude-cui#readme",
+  "bugs": {
+    "url": "https://github.com/MehdiMamas/claude-cui/issues"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "license": "UNLICENSED"
+}

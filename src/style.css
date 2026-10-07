@@ -1,0 +1,26 @@
+:root { color-scheme: dark; font-family: system-ui, sans-serif; color: #f0efe9; background: #171916; }
+* { box-sizing: border-box; }
+body { margin: 0; padding: 30px; }
+.eyebrow { color: #a6b899; letter-spacing: .14em; font-size: 10px; font-weight: 700; }
+h1 { font-size: 32px; line-height: 1.12; font-weight: 550; letter-spacing: -.04em; margin: 18px 0 12px; }
+p { color: #a9aea4; font-size: 13px; line-height: 1.5; }
+h2, .draft-label { font-size: 13px; font-weight: 600; }
+.row { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+main { margin-top: 28px; }
+button { cursor: pointer; background: #292e25; color: #e4ebde; border: 1px solid #414b39; border-radius: 9px; padding: 10px 14px; font: inherit; font-size: 13px; }
+button:hover { background: #37422e; }
+button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 2px solid #bfd9a8; outline-offset: 2px; }
+.quiet { border-color: transparent; color: #b3b8ac; background: transparent; }
+.actions { display: flex; gap: 8px; flex-wrap: wrap; margin: 12px 0 26px; }
+.action { display: flex; gap: 2px; }
+.remove { padding: 6px; }
+label { display: block; font-size: 12px; }
+textarea, input:not([type=checkbox]) { width: 100%; background: #20231e; border: 1px solid #363d30; border-radius: 10px; color: #f0efe9; padding: 12px; font: inherit; font-size: 13px; line-height: 1.5; margin: 8px 0 14px; }
+textarea { resize: vertical; }
+.primary { background: #c2d5ad; color: #192213; border-color: #c2d5ad; flex: 1; font-weight: 650; }
+.primary:hover { background: #d5e6c4; }
+#status { min-height: 20px; }
+footer { border-top: 1px solid #30372a; padding-top: 16px; display: flex; justify-content: space-between; gap: 12px; color: #969e8e; font-size: 11px; }
+footer label { font-size: 11px; }
+.hint { font-size: 11px; }
+[hidden] { display: none !important; }
